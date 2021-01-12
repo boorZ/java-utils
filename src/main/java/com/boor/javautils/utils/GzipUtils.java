@@ -7,9 +7,9 @@ import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 
 /**
- * @author zhou lin
- * @description Gzip
- * @create 2021-01-04 22:16
+ * @author 周林
+ * @version Gzip工具类
+ * @date 2020/12/1 11:56
  */
 public class GzipUtils {
 
@@ -105,7 +105,14 @@ public class GzipUtils {
     }
 
     public static void main(String[] args) {
-        String str = "123123dsfasdfasdfasdfADFasd*……&……*《》fdsafddsfasdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafd";
+        String str = "123123dsfasdfasdfasdfADFasd*……&……*《》fdsafddsfa" +
+                "sdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafddsf" +
+                "sdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafddsf" +
+                "sdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafddsf" +
+                "sdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafddsf" +
+                "sdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafddsf" +
+                "sdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafddsf" +
+                "asdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafddsfasdfasdfasdfasdfdsafd";
         System.out.println("原文: " + str);
         String compress = compress(str);
         System.out.println("压缩: " + compress);
